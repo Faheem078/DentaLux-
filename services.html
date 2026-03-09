@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — DentaLux</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo">Denta<span>Lux</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Book Appointment</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <span style="color:rgba(255,255,255,0.6);">Services</span>
+  </div>
+  <div class="page-hero-label">What We Offer</div>
+  <h1 class="page-hero-title">Our <em>Premium</em><br>Dental Services</h1>
+  <p class="page-hero-desc">From routine check-ups to complete smile makeovers, we offer a comprehensive suite of dental treatments using the latest technology and techniques.</p>
+</div>
+
+<!-- SERVICE TABS -->
+<section class="tabs-section">
+  <div class="tabs-bar">
+    <button class="tab-btn active" onclick="openTab(event,'cosmetic')">Cosmetic</button>
+    <button class="tab-btn" onclick="openTab(event,'restorative')">Restorative</button>
+    <button class="tab-btn" onclick="openTab(event,'orthodontic')">Orthodontic</button>
+    <button class="tab-btn" onclick="openTab(event,'preventive')">Preventive</button>
+    <button class="tab-btn" onclick="openTab(event,'surgical')">Surgical</button>
+  </div>
+
+  <!-- COSMETIC -->
+  <div class="tab-panel active" id="cosmetic">
+    <div class="service-detail fade-up">
+      <div class="service-detail-img" style="font-size:100px;">✨</div>
+      <div>
+        <div class="service-label">Cosmetic Dentistry</div>
+        <h2 class="service-title">Smile <em>Transformation</em><br>Redefined</h2>
+        <p class="service-text">Our cosmetic dentistry services combine art and science to create smiles that are not only beautiful but uniquely yours. From subtle enhancements to complete makeovers, our skilled team uses the finest materials and techniques to deliver exceptional results.</p>
+        <ul class="service-features">
+          <li>Porcelain Veneers — ultra-thin, custom-crafted shells</li>
+          <li>Professional Teeth Whitening — up to 8 shades brighter</li>
+          <li>Dental Bonding — seamless chip and gap repair</li>
+          <li>Smile Makeovers — complete aesthetic redesign</li>
+          <li>Gum Contouring — perfect your smile's frame</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Book Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESTORATIVE -->
+  <div class="tab-panel" id="restorative">
+    <div class="service-detail fade-up">
+      <div class="service-detail-img" style="font-size:100px;">🦷</div>
+      <div>
+        <div class="service-label">Restorative Dentistry</div>
+        <h2 class="service-title">Restore Function &<br><em>Confidence</em></h2>
+        <p class="service-text">Our restorative treatments rebuild damaged, decayed, or missing teeth with precision and artistry. Using biocompatible materials and advanced techniques, we restore both the appearance and full function of your smile.</p>
+        <ul class="service-features">
+          <li>Dental Implants — permanent, life-like replacements</li>
+          <li>Porcelain Crowns — full coverage restoration</li>
+          <li>Tooth-Colored Fillings — invisible cavity repair</li>
+          <li>Dental Bridges — fixed missing tooth solutions</li>
+          <li>Full & Partial Dentures — complete oral restoration</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Book Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORTHODONTIC -->
+  <div class="tab-panel" id="orthodontic">
+    <div class="service-detail fade-up">
+      <div class="service-detail-img" style="font-size:100px;">😁</div>
+      <div>
+        <div class="service-label">Orthodontic Care</div>
+        <h2 class="service-title">Precision <em>Alignment</em><br>For Every Life</h2>
+        <p class="service-text">Achieve perfectly aligned teeth with our comprehensive orthodontic options. Whether you prefer discreet clear aligners or traditional braces, our orthodontists craft personalized treatment plans for all ages.</p>
+        <ul class="service-features">
+          <li>Clear Aligners (Invisalign) — nearly invisible treatment</li>
+          <li>Traditional Metal Braces — reliable, proven results</li>
+          <li>Ceramic Braces — tooth-colored, discreet option</li>
+          <li>Lingual Braces — hidden behind teeth</li>
+          <li>Retainers — protect your investment long-term</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Book Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREVENTIVE -->
+  <div class="tab-panel" id="preventive">
+    <div class="service-detail fade-up">
+      <div class="service-detail-img" style="font-size:100px;">🛡️</div>
+      <div>
+        <div class="service-label">Preventive Care</div>
+        <h2 class="service-title">Protect Your <em>Smile</em><br>For Life</h2>
+        <p class="service-text">The foundation of excellent oral health is consistent preventive care. Our thorough examinations, professional cleanings, and personalized education help you maintain a healthy, beautiful smile for decades.</p>
+        <ul class="service-features">
+          <li>Comprehensive Dental Exams</li>
+          <li>Professional Cleanings & Scaling</li>
+          <li>Digital X-Rays & 3D Imaging</li>
+          <li>Oral Cancer Screenings</li>
+          <li>Custom Night Guards & Sports Guards</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Book Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SURGICAL -->
+  <div class="tab-panel" id="surgical">
+    <div class="service-detail fade-up">
+      <div class="service-detail-img" style="font-size:100px;">⚕️</div>
+      <div>
+        <div class="service-label">Oral Surgery</div>
+        <h2 class="service-title">Expert <em>Surgical</em><br>Solutions</h2>
+        <p class="service-text">Our oral surgeons perform a wide range of surgical procedures with exceptional precision and care. From wisdom tooth extractions to complex bone grafting, patient comfort and safety are always our top priorities.</p>
+        <ul class="service-features">
+          <li>Wisdom Tooth Extractions</li>
+          <li>Dental Implant Placement</li>
+          <li>Bone Grafting & Ridge Augmentation</li>
+          <li>Jaw Surgery (Orthognathic)</li>
+          <li>IV Sedation & General Anesthesia Available</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Book Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="section-label" style="color:rgba(196,163,90,0.7);">Investment in Your Smile</div>
+  <h2 class="section-title fade-up" style="color:white;">Transparent <em>Pricing</em></h2>
+  <div class="pricing-grid">
+    <div class="pricing-card fade-up">
+      <div class="pricing-tier">Essential</div>
+      <div class="pricing-price">$99</div>
+      <div class="pricing-from">New Patient Exam & X-Rays</div>
+      <ul class="pricing-features">
+        <li>Comprehensive oral exam</li>
+        <li>Full-mouth X-rays</li>
+        <li>Personalized treatment plan</li>
+        <li>Oral cancer screening</li>
+        <li>Smile analysis report</li>
+      </ul>
+      <a href="contact.html" class="pricing-cta">Get Started</a>
+    </div>
+    <div class="pricing-card featured fade-up">
+      <div class="pricing-badge">Most Popular</div>
+      <div class="pricing-tier">Premium</div>
+      <div class="pricing-price">$299</div>
+      <div class="pricing-from">Complete Smile Assessment</div>
+      <ul class="pricing-features">
+        <li>Everything in Essential</li>
+        <li>3D CBCT imaging scan</li>
+        <li>Digital smile design preview</li>
+        <li>Gum health evaluation</li>
+        <li>Cosmetic consultation included</li>
+      </ul>
+      <a href="contact.html" class="pricing-cta">Book Premium</a>
+    </div>
+    <div class="pricing-card fade-up">
+      <div class="pricing-tier">Concierge</div>
+      <div class="pricing-price">$599</div>
+      <div class="pricing-from">VIP Smile Experience</div>
+      <ul class="pricing-features">
+        <li>Everything in Premium</li>
+        <li>Same-day appointments</li>
+        <li>Priority scheduling always</li>
+        <li>Sleep dentistry options</li>
+        <li>Dedicated care coordinator</li>
+      </ul>
+      <a href="contact.html" class="pricing-cta">Go Concierge</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-label fade-up">Common Questions</div>
+  <h2 class="section-title fade-up" style="color:var(--deep);">Frequently Asked <em style="font-style:italic;color:var(--gold);">Questions</em></h2>
+  <div class="faq-grid">
+    <div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">How often should I visit the dentist? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">We recommend visiting every 6 months for routine cleanings and check-ups. Patients with certain conditions may benefit from more frequent visits — we'll advise what's best for you personally.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Is teeth whitening safe? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">Yes, professional teeth whitening is very safe when performed by dental professionals. We use clinically-tested, enamel-safe whitening agents calibrated to your specific tooth sensitivity.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">How long do dental implants last? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">Dental implants can last a lifetime with proper care. The implant post is permanent, and the crown typically lasts 10–15+ years before needing replacement due to normal wear.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Do you accept dental insurance? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">We accept most major dental insurance plans and are in-network with many carriers. Our team will help you maximize your benefits and explain your coverage before treatment begins.</div>
+      </div>
+    </div>
+    <div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">What is the Invisalign process like? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">Invisalign begins with a 3D scan of your teeth. We create a custom series of clear aligners worn for 22 hours/day, changed every 1–2 weeks. Treatment typically takes 6–18 months depending on complexity.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Is cosmetic dentistry painful? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">Most cosmetic procedures involve minimal discomfort. We use advanced local anesthetics and offer sedation options for anxious patients to ensure a completely comfortable experience.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">How much do veneers cost? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">Porcelain veneers typically range from $1,000–$2,500 per tooth. The exact cost depends on the number of veneers, the complexity, and materials chosen. We offer financing options to make them accessible.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Do you offer sedation dentistry? <div class="faq-icon">+</div></div>
+        <div class="faq-answer">Yes, we offer nitrous oxide (laughing gas), oral sedation, and IV sedation for patients with dental anxiety or those undergoing complex procedures. Your comfort is always our first priority.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <div class="cta-title">Questions About Our <em>Services?</em></div>
+  <a href="contact.html" class="btn-white">Talk to an Expert</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Denta<span>Lux</span></div>
+      <div class="footer-desc">Where exceptional dental care meets a warm, welcoming environment. Your journey to a perfect smile begins here.</div>
+      <div style="display:flex; gap:12px; margin-top:25px;">
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">f</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">in</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">ig</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="doctors.html">Our Doctors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Services</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Cosmetic Dentistry</a></li>
+        <li><a href="services.html">Dental Implants</a></li>
+        <li><a href="services.html">Orthodontics</a></li>
+        <li><a href="services.html">Teeth Whitening</a></li>
+        <li><a href="services.html">Root Canal</a></li>
+        <li><a href="services.html">Oral Surgery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="#">📍 123 Smile Avenue, Suite 400<br>Beverly Hills, CA 90210</a></li>
+        <li><a href="tel:+13105550100">📞 +1 (310) 555-0100</a></li>
+        <li><a href="mailto:hello@dentalux.com">✉️ hello@dentalux.com</a></li>
+        <li><a href="#">🕐 Mon–Fri: 8am – 7pm<br>Sat: 9am – 5pm</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 DentaLux. All rights reserved.</div>
+    <div style="display:flex; gap:25px;">
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Privacy Policy</a>
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<div class="page-nav">
+  <a href="index.html">Home</a>
+  <a href="services.html" class="active">Services</a>
+  <a href="about.html">About</a>
+  <a href="doctors.html">Doctors</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+function openTab(e,id){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  e.target.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function toggleFaq(el){
+  const isOpen=el.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!isOpen) el.classList.add('open');
+}
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('.fade-up').forEach(el=>{
+  gsap.to(el,{opacity:1,y:0,duration:0.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%'}});
+});
+</script>
+
+<!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+// Scroll to top functionality
+let mybutton = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+});
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>

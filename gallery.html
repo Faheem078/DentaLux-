@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — DentaLux</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo">Denta<span>Lux</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="about.html">About</a><a href="doctors.html">Doctors</a>
+    <a href="gallery.html" class="active">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Book Appointment</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-label">Our Work</div>
+  <h1 class="page-hero-title">Smile <em>Transformations</em><br>&amp; Our Clinic</h1>
+  <p style="font-size:17px;color:rgba(255,255,255,0.5);max-width:550px;line-height:1.8;font-weight:300;">Witness the artistry behind our treatments — real patients, real results, and the beautiful environment where every smile journey begins.</p>
+</div>
+
+<!-- BEFORE/AFTER -->
+<section class="ba-section">
+  <div class="section-label fade-up">Real Patient Results</div>
+  <h2 class="section-title fade-up">Before & <em>After</em><br>Transformations</h2>
+  <div class="ba-grid">
+    <div class="ba-card fade-up">
+      <div class="ba-images">
+        <div class="ba-img ba-img-before"><span>😬</span><div class="ba-label ba-label-before">Before</div></div>
+        <div class="ba-img ba-img-after"><span>😁</span><div class="ba-label ba-label-after">After</div></div>
+        <div class="ba-divider"><div class="ba-divider-btn">⇔</div></div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-treatment">Porcelain Veneers</div>
+        <div class="ba-title">Complete Smile Makeover</div>
+        <div class="ba-desc">8 upper veneers transforming discolored, uneven teeth into a stunning, natural-looking smile in just 2 appointments.</div>
+      </div>
+    </div>
+    <div class="ba-card fade-up">
+      <div class="ba-images">
+        <div class="ba-img ba-img-before" style="background:linear-gradient(135deg,#B8B0A0,#C8C0B0);"><span>😐</span><div class="ba-label ba-label-before">Before</div></div>
+        <div class="ba-img ba-img-after"><span>😄</span><div class="ba-label ba-label-after">After</div></div>
+        <div class="ba-divider"><div class="ba-divider-btn">⇔</div></div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-treatment">Dental Implants</div>
+        <div class="ba-title">Full Arch Restoration</div>
+        <div class="ba-desc">All-on-4 implant-supported bridge replacing a failing dentition with a permanent, functional smile in a single procedure.</div>
+      </div>
+    </div>
+    <div class="ba-card fade-up">
+      <div class="ba-images">
+        <div class="ba-img ba-img-before" style="background:linear-gradient(135deg,#C4B9A8,#D4C9BA);"><span>🙁</span><div class="ba-label ba-label-before">Before</div></div>
+        <div class="ba-img ba-img-after"><span>😊</span><div class="ba-label ba-label-after">After</div></div>
+        <div class="ba-divider"><div class="ba-divider-btn">⇔</div></div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-treatment">Invisalign</div>
+        <div class="ba-title">Alignment Correction</div>
+        <div class="ba-desc">18 months of clear aligner therapy correcting significant crowding and bite issues without a single metal bracket.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="gallery-section">
+  <div class="section-label" style="color:rgba(196,163,90,0.7);">Photo Gallery</div>
+  <h2 class="section-title fade-up" style="color:white;">Our Clinic & <em>Work</em></h2>
+  <div class="gallery-filter">
+    <button class="gfilt-btn active">All</button>
+    <button class="gfilt-btn">Smile Results</button>
+    <button class="gfilt-btn">Our Clinic</button>
+    <button class="gfilt-btn">Technology</button>
+    <button class="gfilt-btn">Team</button>
+  </div>
+  <div class="gallery-masonry">
+    <!-- Items with varied heights -->
+    <div class="gallery-item" onclick="openLightbox('Cosmetic Transformation','Porcelain Veneers — 8 upper teeth')">
+      <div class="g-placeholder" style="height:280px;">✨</div>
+      <div class="g-overlay"><div class="g-label">Smile Transformation</div><div class="g-sub">Porcelain Veneers</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Reception Area','Modern luxury waiting lounge')">
+      <div class="g-placeholder" style="height:200px;">🏥</div>
+      <div class="g-overlay"><div class="g-label">Reception Lounge</div><div class="g-sub">Our Clinic</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('3D CBCT Scanner','State-of-the-art imaging')">
+      <div class="g-placeholder" style="height:240px;">🔬</div>
+      <div class="g-overlay"><div class="g-label">3D CBCT Imaging</div><div class="g-sub">Technology</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Treatment Room','Private, calming treatment suite')">
+      <div class="g-placeholder" style="height:200px;">🛋️</div>
+      <div class="g-overlay"><div class="g-label">Treatment Suite</div><div class="g-sub">Our Clinic</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Implant Result','Single tooth implant restoration')">
+      <div class="g-placeholder" style="height:220px;">🦷</div>
+      <div class="g-overlay"><div class="g-label">Implant Result</div><div class="g-sub">Dental Implants</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Our Team','Expert dental professionals')">
+      <div class="g-placeholder" style="height:260px;">👥</div>
+      <div class="g-overlay"><div class="g-label">Our Team</div><div class="g-sub">Meet The Experts</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Whitening Result','Professional teeth whitening')">
+      <div class="g-placeholder" style="height:200px;">⚡</div>
+      <div class="g-overlay"><div class="g-label">Whitening Result</div><div class="g-sub">Teeth Whitening</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Digital Smile Design','AI-powered smile preview technology')">
+      <div class="g-placeholder" style="height:280px;">💻</div>
+      <div class="g-overlay"><div class="g-label">Digital Smile Design</div><div class="g-sub">Technology</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Orthodontic Result','Invisalign treatment complete')">
+      <div class="g-placeholder" style="height:220px;">😁</div>
+      <div class="g-overlay"><div class="g-label">Orthodontic Result</div><div class="g-sub">Invisalign</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Sterilization Lab','ISO-certified sterilization suite')">
+      <div class="g-placeholder" style="height:200px;">🧪</div>
+      <div class="g-overlay"><div class="g-label">Sterilization Lab</div><div class="g-sub">Our Clinic</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Crown Result','E-max porcelain crown')">
+      <div class="g-placeholder" style="height:240px;">👑</div>
+      <div class="g-overlay"><div class="g-label">Crown Restoration</div><div class="g-sub">Restorative</div></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('Laser Dentistry','BIOLASE laser system')">
+      <div class="g-placeholder" style="height:200px;">⚕️</div>
+      <div class="g-overlay"><div class="g-label">Laser Dentistry</div><div class="g-sub">Technology</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item fade-up"><div class="stat-num">500<span class="stat-unit">+</span></div><div class="stat-label">Smile Makeovers</div></div>
+  <div class="stat-item fade-up"><div class="stat-num">2K<span class="stat-unit">+</span></div><div class="stat-label">Implants Placed</div></div>
+  <div class="stat-item fade-up"><div class="stat-num">98<span class="stat-unit">%</span></div><div class="stat-label">Patient Satisfaction</div></div>
+  <div class="stat-item fade-up"><div class="stat-num">12<span class="stat-unit">K</span></div><div class="stat-label">Happy Smiles</div></div>
+</div>
+
+<div class="cta-strip">
+  <div class="cta-title">Ready for Your <em>Transformation?</em></div>
+  <a href="contact.html" class="btn-white">Start Your Journey</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <div class="lightbox-img" id="lb-img"><div style="font-size:80px;opacity:0.3;">✨</div></div>
+    <div class="lightbox-title" id="lb-title">Title</div>
+    <div class="lightbox-desc" id="lb-desc">Description</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Denta<span>Lux</span></div>
+      <div class="footer-desc">Where exceptional dental care meets a warm, welcoming environment. Your journey to a perfect smile begins here.</div>
+      <div style="display:flex; gap:12px; margin-top:25px;">
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">f</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">in</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">ig</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="doctors.html">Our Doctors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Services</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Cosmetic Dentistry</a></li>
+        <li><a href="services.html">Dental Implants</a></li>
+        <li><a href="services.html">Orthodontics</a></li>
+        <li><a href="services.html">Teeth Whitening</a></li>
+        <li><a href="services.html">Root Canal</a></li>
+        <li><a href="services.html">Oral Surgery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="#">📍 123 Smile Avenue, Suite 400<br>Beverly Hills, CA 90210</a></li>
+        <li><a href="tel:+13105550100">📞 +1 (310) 555-0100</a></li>
+        <li><a href="mailto:hello@dentalux.com">✉️ hello@dentalux.com</a></li>
+        <li><a href="#">🕐 Mon–Fri: 8am – 7pm<br>Sat: 9am – 5pm</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 DentaLux. All rights reserved.</div>
+    <div style="display:flex; gap:25px;">
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Privacy Policy</a>
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<div class="page-nav">
+  <a href="index.html">Home</a><a href="services.html">Services</a>
+  <a href="about.html">About</a><a href="doctors.html">Doctors</a>
+  <a href="gallery.html" class="active">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+</div>
+
+<script>
+function openLightbox(title, desc) {
+  document.getElementById('lb-title').textContent = title;
+  document.getElementById('lb-desc').textContent = desc;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('.fade-up').forEach(el=>{gsap.to(el,{opacity:1,y:0,duration:0.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%'}});});
+
+// Gallery items stagger
+gsap.utils.toArray('.gallery-item').forEach((el,i)=>{
+  gsap.from(el,{opacity:0,y:30,duration:0.6,delay:i*0.05,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 90%'}});
+});
+</script>
+
+<!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+// Scroll to top functionality
+let mybutton = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+});
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>

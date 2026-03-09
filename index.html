@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DentaLux — Premium Dental Care</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">Denta<span>Lux</span></div>
+  <div class="nav-links">
+    <a href="index.html" style="color:var(--gold)">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Book Appointment</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-badge">Award-Winning Dental Care</div>
+    <h1 class="hero-title fade-up">
+      Your Smile is<br>
+      Our <em>Greatest</em><br>
+      Masterpiece
+    </h1>
+    <p class="hero-desc fade-up">Experience dental excellence where science meets artistry. We craft radiant, healthy smiles with state-of-the-art technology and a compassionate touch.</p>
+    <div class="hero-actions fade-up">
+      <a href="contact.html" class="btn-primary">Book Consultation</a>
+      <a href="services.html" class="btn-outline">Our Services</a>
+    </div>
+    <div class="hero-stats fade-up">
+      <div>
+        <div class="stat-num">12K+</div>
+        <div class="stat-label">Happy Patients</div>
+      </div>
+      <div>
+        <div class="stat-num">25+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">98%</div>
+        <div class="stat-label">Satisfaction Rate</div>
+      </div>
+    </div>
+    <div class="scroll-line"><span>Scroll</span></div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-container" style="background: linear-gradient(135deg, #1A1A2E 0%, #2C2C3E 50%, #3A3A5E 100%); display:flex; align-items:center; justify-content:center;">
+      <div style="text-align:center; color:rgba(255,255,255,0.15);">
+        <div style="font-size:180px; line-height:1;">🦷</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:rgba(196,163,90,0.4); margin-top:20px;">Premium Dental Care</div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-card">
+      <div class="hero-card-tag">New Patient Offer</div>
+      <div class="hero-card-title">Free Consultation</div>
+      <div class="hero-card-text">Schedule your complimentary smile assessment with our expert dental team today.</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="marquee-dot"></span>Cosmetic Dentistry</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Dental Implants</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Orthodontics</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Teeth Whitening</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Veneers & Crowns</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Root Canal Therapy</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Pediatric Dentistry</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Oral Surgery</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Cosmetic Dentistry</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Dental Implants</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Orthodontics</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Teeth Whitening</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Veneers & Crowns</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Root Canal Therapy</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Pediatric Dentistry</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Oral Surgery</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="section-label fade-in">What We Offer</div>
+  <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+    <h2 class="section-title fade-up">Comprehensive Dental <em>Services</em></h2>
+    <a href="services.html" class="btn-outline" style="flex-shrink:0;">View All Services</a>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <div class="service-num">01</div>
+      <span class="service-icon">✨</span>
+      <div class="service-name">Cosmetic Dentistry</div>
+      <div class="service-desc">Transform your smile with veneers, bonding, and whitening treatments designed for lasting brilliance.</div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">02</div>
+      <span class="service-icon">🦷</span>
+      <div class="service-name">Dental Implants</div>
+      <div class="service-desc">Permanent, natural-looking replacements that restore full function and confidence to your smile.</div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">03</div>
+      <span class="service-icon">🔬</span>
+      <div class="service-name">Orthodontics</div>
+      <div class="service-desc">Precision alignment with traditional braces and clear aligner systems for every lifestyle.</div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">04</div>
+      <span class="service-icon">🛡️</span>
+      <div class="service-name">Preventive Care</div>
+      <div class="service-desc">Comprehensive cleanings, exams, and personalized care plans to protect your long-term oral health.</div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">05</div>
+      <span class="service-icon">⚕️</span>
+      <div class="service-name">Oral Surgery</div>
+      <div class="service-desc">Expert surgical care including extractions, bone grafting, and complex reconstructive procedures.</div>
+      <div class="service-arrow">→</div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-num">06</div>
+      <span class="service-icon">🌟</span>
+      <div class="service-name">Teeth Whitening</div>
+      <div class="service-desc">Professional-grade whitening treatments delivering brilliant results, safely and effectively.</div>
+      <div class="service-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section">
+  <div class="section-label fade-in" style="color:rgba(196,163,90,0.7);">Why Choose Us</div>
+  <h2 class="section-title fade-up" style="color:white;">The DentaLux <em>Difference</em></h2>
+  <div class="why-grid">
+    <div class="why-image-stack fade-in">
+      <div style="position:absolute; top:0; left:0; width:75%; height:80%; background: linear-gradient(135deg, #2C2C3E, #1A1A2E); display:flex; align-items:center; justify-content:center;">
+        <div style="font-size:100px; opacity:0.3;">🏥</div>
+      </div>
+      <div style="position:absolute; bottom:0; right:0; width:55%; height:50%; background: linear-gradient(135deg, #3A3A4A, #2C2C3E); border:4px solid var(--deep); display:flex; align-items:center; justify-content:center;">
+        <div style="font-size:70px; opacity:0.4;">⚕️</div>
+      </div>
+      <div class="why-badge floating">
+        <div class="why-badge-num">25+</div>
+        <div class="why-badge-text">Years of Care</div>
+      </div>
+    </div>
+    <div class="why-items">
+      <div class="why-item fade-up">
+        <div class="why-item-icon">🔬</div>
+        <div>
+          <div class="why-item-title">Advanced Technology</div>
+          <div class="why-item-text">State-of-the-art digital X-rays, 3D imaging, and laser dentistry for precise, comfortable treatments.</div>
+        </div>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-item-icon">👨‍⚕️</div>
+        <div>
+          <div class="why-item-title">Expert Team</div>
+          <div class="why-item-text">Board-certified specialists with decades of combined experience across all dental disciplines.</div>
+        </div>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-item-icon">💎</div>
+        <div>
+          <div class="why-item-title">Personalized Care</div>
+          <div class="why-item-text">Every treatment plan is uniquely crafted to meet your specific needs, goals, and budget.</div>
+        </div>
+      </div>
+      <div class="why-item fade-up">
+        <div class="why-item-icon">🕐</div>
+        <div>
+          <div class="why-item-title">Flexible Scheduling</div>
+          <div class="why-item-text">Early morning, evening, and weekend appointments to fit your busy lifestyle seamlessly.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div style="text-align:center;">
+    <div class="section-label fade-in" style="justify-content:center;">Patient Stories</div>
+    <h2 class="section-title fade-up" style="margin: 0 auto; text-align:center;">What Our Patients <em>Say</em></h2>
+  </div>
+  <div class="testimonial-slider" style="position:relative;">
+    <button class="slider-nav slider-prev" id="prevBtn">←</button>
+    <div class="testimonial-track" id="testimonialTrack">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <div class="testimonial-quote">"The team at DentaLux completely transformed my smile. After years of hiding my teeth, I finally feel confident enough to laugh out loud. Their attention to detail is extraordinary."</div>
+        <div class="testimonial-author">
+          <div class="testimonial-name">Sarah M.</div>
+          <div class="testimonial-role">Porcelain Veneers Patient</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <div class="testimonial-quote">"I was terrified of dental visits until I came to DentaLux. The calming atmosphere and gentle approach made all the difference. My implants look and feel completely natural."</div>
+        <div class="testimonial-author">
+          <div class="testimonial-name">James R.</div>
+          <div class="testimonial-role">Dental Implant Patient</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <div class="testimonial-quote">"World-class care in every sense. The technology they use is cutting-edge, the staff is warm and professional, and the results speak for themselves. Simply outstanding."</div>
+        <div class="testimonial-author">
+          <div class="testimonial-name">Elena K.</div>
+          <div class="testimonial-role">Cosmetic Dentistry Patient</div>
+        </div>
+      </div>
+    </div>
+    <button class="slider-nav slider-next" id="nextBtn">→</button>
+  </div>
+  <div class="slider-controls">
+    <button class="slider-dot active" onclick="goToSlide(0)"></button>
+    <button class="slider-dot" onclick="goToSlide(1)"></button>
+    <button class="slider-dot" onclick="goToSlide(2)"></button>
+  </div>
+</section>
+
+<!-- TEAM PREVIEW -->
+<section class="team-section">
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:0;">
+    <div>
+      <div class="section-label fade-in">Meet the Experts</div>
+      <h2 class="section-title fade-up">Our Dental <em>Specialists</em></h2>
+    </div>
+    <a href="doctors.html" class="btn-outline" style="flex-shrink:0;">View All Doctors</a>
+  </div>
+  <div class="team-grid">
+<div class="team-card fade-up">
+      <div class="team-img">
+        <img src="image/img-8.jpg" alt="Dr. Michael Chen" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="team-overlay">
+        <div class="team-overlay-name">Dr. Michael Chen</div>
+        <div class="team-overlay-text">20+ years of cosmetic dentistry excellence. Harvard School of Dental Medicine graduate.</div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Dr. Michael Chen</div>
+        <div class="team-specialty">Lead Cosmetic Dentist</div>
+      </div>
+    </div>
+    <div class="team-card fade-up">
+      <div class="team-img">
+        <img src="image/img-9.jpg" alt="Dr. Sarah Williams" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="team-overlay">
+        <div class="team-overlay-name">Dr. Sarah Williams</div>
+        <div class="team-overlay-text">Specialist in orthodontics and clear aligner therapy with 15 years of experience.</div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Dr. Sarah Williams</div>
+        <div class="team-specialty">Orthodontist</div>
+      </div>
+    </div>
+    <div class="team-card fade-up">
+      <div class="team-img">
+        <img src="image/img-10.jpg" alt="Dr. James Patel" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="team-overlay">
+        <div class="team-overlay-name">Dr. James Patel</div>
+        <div class="team-overlay-text">Implant surgery and oral reconstruction specialist with international training.</div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Dr. James Patel</div>
+        <div class="team-specialty">Oral Surgeon</div>
+      </div>
+    </div>
+    <div class="team-card fade-up">
+      <div class="team-img">
+        <img src="image/img-11.jpg" alt="Dr. Emily Ross" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="team-overlay">
+        <div class="team-overlay-name">Dr. Emily Ross</div>
+        <div class="team-overlay-text">Pediatric dentistry and family care expert committed to gentle, fun dental visits.</div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Dr. Emily Ross</div>
+        <div class="team-specialty">Pediatric Dentist</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip fade-in">
+  <div class="cta-strip-title">Ready for Your <em>Dream Smile?</em></div>
+  <a href="contact.html" class="btn-white">Schedule Free Consultation</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Denta<span>Lux</span></div>
+      <div class="footer-desc">Where exceptional dental care meets a warm, welcoming environment. Your journey to a perfect smile begins here.</div>
+      <div style="display:flex; gap:12px; margin-top:25px;">
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">f</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">in</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">ig</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="doctors.html">Our Doctors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Services</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Cosmetic Dentistry</a></li>
+        <li><a href="services.html">Dental Implants</a></li>
+        <li><a href="services.html">Orthodontics</a></li>
+        <li><a href="services.html">Teeth Whitening</a></li>
+        <li><a href="services.html">Root Canal</a></li>
+        <li><a href="services.html">Oral Surgery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="#">📍 123 Smile Avenue, Suite 400<br>Beverly Hills, CA 90210</a></li>
+        <li><a href="tel:+13105550100">📞 +1 (310) 555-0100</a></li>
+        <li><a href="mailto:hello@dentalux.com">✉️ hello@dentalux.com</a></li>
+        <li><a href="#">🕐 Mon–Fri: 8am – 7pm<br>Sat: 9am – 5pm</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 DentaLux. All rights reserved.</div>
+    <div style="display:flex; gap:25px;">
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Privacy Policy</a>
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- PAGE NAV -->
+<div class="page-nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="doctors.html">Doctors</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+// NAVBAR SCROLL
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// TESTIMONIAL SLIDER
+let current = 0;
+const track = document.getElementById('testimonialTrack');
+const dots = document.querySelectorAll('.slider-dot');
+function goToSlide(i) {
+  current = i;
+  track.style.transform = `translateX(-${i * 100}%)`;
+  dots.forEach((d,j) => d.classList.toggle('active', j === i));
+}
+document.getElementById('prevBtn').onclick = () => goToSlide((current - 1 + 3) % 3);
+document.getElementById('nextBtn').onclick = () => goToSlide((current + 1) % 3);
+setInterval(() => goToSlide((current + 1) % 3), 5000);
+
+// GSAP ANIMATIONS
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('.fade-up').forEach(el => {
+  gsap.to(el, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out',
+    scrollTrigger: { trigger: el, start: 'top 85%' }
+  });
+});
+gsap.utils.toArray('.fade-in').forEach(el => {
+  gsap.to(el, { opacity: 1, duration: 0.8, ease: 'power2.out',
+    scrollTrigger: { trigger: el, start: 'top 85%' }
+  });
+});
+// Hero animations on load
+gsap.timeline()
+  .to('.hero-badge', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', delay: 0.3 })
+  .to('.hero-title', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' }, '-=0.3')
+  .to('.hero-desc', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.5')
+  .to('.hero-actions', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.4')
+  .to('.hero-stats', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.4');
+</script>
+
+<!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+// Scroll to top functionality
+let mybutton = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+});
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>

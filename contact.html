@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — DentaLux</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo">Denta<span>Lux</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="about.html">About</a><a href="doctors.html">Doctors</a>
+    <a href="gallery.html">Gallery</a><a href="blog.html">Blog</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <a href="#form" class="nav-cta">Book Now</a>
+</nav>
+
+<!-- EMERGENCY STRIP -->
+<div class="emergency-strip" style="margin-top:100px;">
+  <div class="emergency-text">
+    <div class="emergency-badge">🚨 Emergency</div>
+    <div class="emergency-message">Dental emergency? We offer same-day emergency appointments during business hours.</div>
+  </div>
+  <a href="tel:+13105550100" class="emergency-phone">📞 +1 (310) 555-0100</a>
+</div>
+
+<!-- MAIN CONTACT LAYOUT -->
+<div class="contact-hero" style="padding-top:0;min-height:auto;">
+  <!-- LEFT: INFO -->
+  <div class="contact-hero-left">
+    <div class="page-hero-label">Get In Touch</div>
+    <h1 class="hero-title fade-up">We're Here<br>For Your <em>Smile</em></h1>
+    <div class="contact-info-list">
+      <div class="contact-info-item fade-up">
+        <div class="contact-icon-box">📍</div>
+        <div>
+          <div class="contact-info-label">Location</div>
+          <div class="contact-info-value">123 Smile Avenue, Suite 400<br>Beverly Hills, CA 90210</div>
+          <div class="contact-info-sub">Free parking available on premises</div>
+        </div>
+      </div>
+      <div class="contact-info-item fade-up">
+        <div class="contact-icon-box">📞</div>
+        <div>
+          <div class="contact-info-label">Phone</div>
+          <div class="contact-info-value">+1 (310) 555-0100</div>
+          <div class="contact-info-sub">Call or text during office hours</div>
+        </div>
+      </div>
+      <div class="contact-info-item fade-up">
+        <div class="contact-icon-box">✉️</div>
+        <div>
+          <div class="contact-info-label">Email</div>
+          <div class="contact-info-value">hello@dentalux.com</div>
+          <div class="contact-info-sub">We respond within 2 business hours</div>
+        </div>
+      </div>
+    </div>
+    <div class="hours-grid fade-up">
+      <div class="hours-title">⏰ Office Hours</div>
+      <div class="hours-row today"><span><span class="hours-dot"></span>Monday – Friday</span><span>8:00 AM – 7:00 PM</span></div>
+      <div class="hours-row"><span>Saturday</span><span>9:00 AM – 5:00 PM</span></div>
+      <div class="hours-row"><span>Sunday</span><span style="color:rgba(255,255,255,0.3);">Closed</span></div>
+      <div class="hours-row" style="padding-top:15px;border-top:1px solid rgba(255,255,255,0.06);border-bottom:none;"><span style="font-size:12px;color:rgba(255,255,255,0.35);">*Holiday hours may vary. Call ahead to confirm.</span></div>
+    </div>
+  </div>
+
+  <!-- RIGHT: FORM -->
+  <div class="contact-form-side" id="form">
+    <div class="form-header fade-up">
+      <div class="form-header-tag">Request Appointment</div>
+      <div class="form-header-title">Book Your <em>Consultation</em></div>
+    </div>
+
+    <div class="appt-types fade-up">
+      <div class="appt-type active" onclick="selectType(this)">
+        <span class="appt-type-icon">✨</span>
+        <div class="appt-type-name">New Patient</div>
+        <div class="appt-type-sub">First visit & exam</div>
+      </div>
+      <div class="appt-type" onclick="selectType(this)">
+        <span class="appt-type-icon">🔄</span>
+        <div class="appt-type-name">Returning Patient</div>
+        <div class="appt-type-sub">Follow-up care</div>
+      </div>
+      <div class="appt-type" onclick="selectType(this)">
+        <span class="appt-type-icon">🚨</span>
+        <div class="appt-type-name">Emergency</div>
+        <div class="appt-type-sub">Same-day care</div>
+      </div>
+      <div class="appt-type" onclick="selectType(this)">
+        <span class="appt-type-icon">💬</span>
+        <div class="appt-type-name">Consultation</div>
+        <div class="appt-type-sub">Discuss options</div>
+      </div>
+    </div>
+
+    <div id="contact-form" class="fade-up">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">First Name *</label>
+          <input class="form-input" type="text" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name *</label>
+          <input class="form-input" type="text" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input class="form-input" type="email" placeholder="john@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone *</label>
+          <input class="form-input" type="tel" placeholder="+1 (310) 555-xxxx">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Service Needed</label>
+          <select class="form-input form-select">
+            <option value="">Select a service...</option>
+            <option>General Check-up & Cleaning</option>
+            <option>Cosmetic Consultation</option>
+            <option>Dental Implants</option>
+            <option>Orthodontics / Invisalign</option>
+            <option>Teeth Whitening</option>
+            <option>Root Canal Treatment</option>
+            <option>Oral Surgery</option>
+            <option>Pediatric Dentistry</option>
+            <option>Emergency Care</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Doctor</label>
+          <select class="form-input form-select">
+            <option value="">No preference</option>
+            <option>Dr. Michael Chen</option>
+            <option>Dr. Sarah Williams</option>
+            <option>Dr. James Patel</option>
+            <option>Dr. Emily Ross</option>
+            <option>Dr. David Park</option>
+            <option>Dr. Lisa Nguyen</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Preferred Date</label>
+          <input class="form-input" type="date">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Time</label>
+          <select class="form-input form-select">
+            <option value="">Select time...</option>
+            <option>8:00 AM – 10:00 AM</option>
+            <option>10:00 AM – 12:00 PM</option>
+            <option>12:00 PM – 2:00 PM</option>
+            <option>2:00 PM – 4:00 PM</option>
+            <option>4:00 PM – 6:00 PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Insurance Provider</label>
+        <input class="form-input" type="text" placeholder="e.g., Delta Dental, Cigna, Aetna (optional)">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message / Special Concerns</label>
+        <textarea class="form-input form-textarea" placeholder="Tell us about your dental concerns, medical history, or any questions you have..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()"><span>Request Appointment →</span></button>
+      <div class="form-note">By submitting, you agree to our Privacy Policy. We'll confirm your appointment within 24 hours.</div>
+    </div>
+
+    <div class="success-msg" id="success-msg">
+      <div class="success-icon">✅</div>
+      <div class="success-title">Appointment Requested!</div>
+      <div class="success-text">Thank you for choosing DentaLux. Our team will confirm your appointment within 2 business hours. You'll receive a confirmation email shortly.</div>
+      <div style="margin-top:25px;font-size:13px;color:var(--gold);">📞 Need immediate assistance? Call +1 (310) 555-0100</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAP -->
+<div class="map-section">
+  <div class="map-bg"></div>
+  <div class="map-grid"></div>
+  <div class="map-pin">
+    <div class="map-pin-circle"><span>📍</span></div>
+    <div class="map-address">DentaLux Dental Center</div>
+    <div class="map-address-sub">123 Smile Avenue, Suite 400, Beverly Hills, CA 90210</div>
+    <a href="https://maps.google.com" target="_blank" class="map-btn">Open in Google Maps →</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Denta<span>Lux</span></div>
+      <div class="footer-desc">Where exceptional dental care meets a warm, welcoming environment. Your journey to a perfect smile begins here.</div>
+      <div style="display:flex; gap:12px; margin-top:25px;">
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">f</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">in</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">ig</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="doctors.html">Our Doctors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Services</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Cosmetic Dentistry</a></li>
+        <li><a href="services.html">Dental Implants</a></li>
+        <li><a href="services.html">Orthodontics</a></li>
+        <li><a href="services.html">Teeth Whitening</a></li>
+        <li><a href="services.html">Root Canal</a></li>
+        <li><a href="services.html">Oral Surgery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="#">📍 123 Smile Avenue, Suite 400<br>Beverly Hills, CA 90210</a></li>
+        <li><a href="tel:+13105550100">📞 +1 (310) 555-0100</a></li>
+        <li><a href="mailto:hello@dentalux.com">✉️ hello@dentalux.com</a></li>
+        <li><a href="#">🕐 Mon–Fri: 8am – 7pm<br>Sat: 9am – 5pm</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 DentaLux. All rights reserved.</div>
+    <div style="display:flex; gap:25px;">
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Privacy Policy</a>
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<div class="page-nav">
+  <a href="index.html">Home</a><a href="services.html">Services</a>
+  <a href="about.html">About</a><a href="doctors.html">Doctors</a>
+  <a href="gallery.html">Gallery</a><a href="blog.html">Blog</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+
+<script>
+function selectType(el) {
+  document.querySelectorAll('.appt-type').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+}
+function submitForm() {
+  document.getElementById('contact-form').style.display='none';
+  document.getElementById('success-msg').classList.add('show');
+}
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('.fade-up').forEach(el=>{
+  gsap.to(el,{opacity:1,y:0,duration:0.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 90%'}});
+});
+gsap.timeline().to('.contact-hero-left .fade-up',{opacity:1,y:0,duration:0.9,stagger:0.12,delay:0.3,ease:'power3.out'})
+               .to('.contact-form-side .fade-up',{opacity:1,y:0,duration:0.9,stagger:0.1,ease:'power3.out'},'-=0.7');
+</script>
+
+<!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+// Scroll to top functionality
+let mybutton = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+});
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>

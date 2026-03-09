@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Doctors — DentaLux</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo">Denta<span>Lux</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="about.html">About</a><a href="doctors.html" class="active">Doctors</a>
+    <a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Book Appointment</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-label">Meet the Team</div>
+  <h1 class="page-hero-title">World-Class <em>Dental</em><br>Specialists</h1>
+  <p class="page-hero-desc">Our team of 18 board-certified specialists brings decades of combined experience, advanced training, and genuine passion to every patient encounter.</p>
+</div>
+
+<!-- FILTER -->
+<div class="filter-section">
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterDocs(this,'all')">All Specialists</button>
+    <button class="filter-btn" onclick="filterDocs(this,'cosmetic')">Cosmetic</button>
+    <button class="filter-btn" onclick="filterDocs(this,'ortho')">Orthodontics</button>
+    <button class="filter-btn" onclick="filterDocs(this,'surgery')">Oral Surgery</button>
+    <button class="filter-btn" onclick="filterDocs(this,'general')">General</button>
+    <button class="filter-btn" onclick="filterDocs(this,'pediatric')">Pediatric</button>
+  </div>
+</div>
+
+<!-- DOCTORS GRID -->
+<div class="doctors-grid">
+<div class="doctor-card fade-up" data-cat="cosmetic">
+    <div class="doctor-img">
+      <img src="image/img-1.jpg" alt="Dr. Michael Chen" style="width:100%;height:100%;object-fit:cover;">
+      <div class="doctor-img-overlay"></div>
+      <div class="doctor-social">
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">@</a>
+      </div>
+    </div>
+    <div class="doctor-info">
+      <div class="doctor-specialty">Lead Cosmetic Dentist</div>
+      <div class="doctor-name">Dr. Michael Chen</div>
+      <div class="doctor-bio">Harvard-trained cosmetic dentist with 20+ years transforming smiles. Pioneer in digital smile design and porcelain veneer artistry.</div>
+      <div class="doctor-credentials"><span class="credential">DDS Harvard</span><span class="credential">AACD Fellow</span><span class="credential">20+ Yrs</span></div>
+    </div>
+  </div>
+<div class="doctor-card fade-up" data-cat="ortho">
+    <div class="doctor-img">
+      <img src="image/img-2.jpg" alt="Dr. Sarah Williams" style="width:100%;height:100%;object-fit:cover;">
+      <div class="doctor-img-overlay"></div>
+      <div class="doctor-social"><a href="#" class="social-btn">in</a><a href="#" class="social-btn">@</a></div>
+    </div>
+    <div class="doctor-info">
+      <div class="doctor-specialty">Orthodontist</div>
+      <div class="doctor-name">Dr. Sarah Williams</div>
+      <div class="doctor-bio">Invisalign Diamond Provider and clear aligner specialist. Board-certified orthodontist serving patients of all ages with personalized treatment plans.</div>
+      <div class="doctor-credentials"><span class="credential">DMD Penn</span><span class="credential">Diamond Invisalign</span><span class="credential">15+ Yrs</span></div>
+    </div>
+  </div>
+<div class="doctor-card fade-up" data-cat="surgery">
+    <div class="doctor-img">
+      <img src="image/img-3.jpg" alt="Dr. James Patel" style="width:100%;height:100%;object-fit:cover;">
+      <div class="doctor-img-overlay"></div>
+      <div class="doctor-social"><a href="#" class="social-btn">in</a><a href="#" class="social-btn">@</a></div>
+    </div>
+    <div class="doctor-info">
+      <div class="doctor-specialty">Oral & Maxillofacial Surgeon</div>
+      <div class="doctor-name">Dr. James Patel</div>
+      <div class="doctor-bio">Internationally trained oral surgeon specializing in dental implants, bone grafting, and complex reconstructive procedures with exceptional precision.</div>
+      <div class="doctor-credentials"><span class="credential">MD/DDS Johns Hopkins</span><span class="credential">OMS Board Cert.</span></div>
+    </div>
+  </div>
+<div class="doctor-card fade-up" data-cat="pediatric">
+    <div class="doctor-img">
+      <img src="image/img-4.jpg" alt="Dr. Emily Ross" style="width:100%;height:100%;object-fit:cover;">
+      <div class="doctor-img-overlay"></div>
+      <div class="doctor-social"><a href="#" class="social-btn">in</a><a href="#" class="social-btn">@</a></div>
+    </div>
+    <div class="doctor-info">
+      <div class="doctor-specialty">Pediatric Dentist</div>
+      <div class="doctor-name">Dr. Emily Ross</div>
+      <div class="doctor-bio">Creating positive dental experiences for children since 2009. Gentle, playful approach that builds lifelong healthy habits from the very first visit.</div>
+      <div class="doctor-credentials"><span class="credential">DMD Columbia</span><span class="credential">Pediatric Board Cert.</span></div>
+    </div>
+  </div>
+<div class="doctor-card fade-up" data-cat="general">
+    <div class="doctor-img">
+      <img src="image/img-5.jpg" alt="Dr. David Park" style="width:100%;height:100%;object-fit:cover;">
+      <div class="doctor-img-overlay"></div>
+      <div class="doctor-social"><a href="#" class="social-btn">in</a><a href="#" class="social-btn">@</a></div>
+    </div>
+    <div class="doctor-info">
+      <div class="doctor-specialty">General & Restorative Dentist</div>
+      <div class="doctor-name">Dr. David Park</div>
+      <div class="doctor-bio">Comprehensive care specialist with expertise in full-mouth rehabilitation, dental crowns, and anxiety-free dentistry using the latest sedation techniques.</div>
+      <div class="doctor-credentials"><span class="credential">DDS UCLA</span><span class="credential">Sedation Certified</span></div>
+    </div>
+  </div>
+<div class="doctor-card fade-up" data-cat="cosmetic">
+    <div class="doctor-img">
+      <img src="image/img-6.jpg" alt="Dr. Lisa Nguyen" style="width:100%;height:100%;object-fit:cover;">
+      <div class="doctor-img-overlay"></div>
+      <div class="doctor-social"><a href="#" class="social-btn">in</a><a href="#" class="social-btn">@</a></div>
+    </div>
+    <div class="doctor-info">
+      <div class="doctor-specialty">Prosthodontist</div>
+      <div class="doctor-name">Dr. Lisa Nguyen</div>
+      <div class="doctor-bio">Board-certified prosthodontist specializing in implant-supported restorations, full-arch rehabilitation, and aesthetic smile design with digital precision.</div>
+      <div class="doctor-credentials"><span class="credential">DDS UCSF</span><span class="credential">Prostho. Board Cert.</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SPOTLIGHT -->
+<section class="spotlight-section">
+  <div class="section-label" style="color:rgba(196,163,90,0.7);">Meet Our Founder</div>
+  <h2 class="section-title fade-up" style="color:white;">Dr. Michael Chen — <em>A Vision</em><br>That Changed Smiles</h2>
+  <div class="spotlight-grid">
+<div class="spotlight-img">
+      <img src="image/img-7.jpg" alt="Dr. Michael Chen" style="width:100%;height:100%;object-fit:cover;opacity:0.7;">
+      <div class="spotlight-badge">
+        <div class="spotlight-badge-text">Founder & Lead Cosmetic Dentist</div>
+        <div class="spotlight-badge-sub">DentaLux, Est. 1999</div>
+      </div>
+    </div>
+    <div>
+      <p class="spotlight-text fade-up">"I founded DentaLux with one belief: that every person deserves a smile that lights up their life. Dentistry isn't just clinical science — it's the art of restoring confidence, joy, and self-expression."</p>
+      <p class="spotlight-text fade-up">Dr. Chen completed his Doctor of Dental Surgery at Harvard School of Dental Medicine, followed by a prestigious residency in cosmetic and restorative dentistry at UCLA. He has personally treated over 5,000 patients and trained hundreds of dentists internationally.</p>
+      <div class="spotlight-facts">
+        <div class="fact-item fade-up"><div class="fact-num">5<span class="fact-unit">K+</span></div><div class="fact-label">Patients Personally Treated</div></div>
+        <div class="fact-item fade-up"><div class="fact-num">25<span class="fact-unit">+</span></div><div class="fact-label">Years in Practice</div></div>
+        <div class="fact-item fade-up"><div class="fact-num">200<span class="fact-unit">+</span></div><div class="fact-label">Lectures & Trainings</div></div>
+        <div class="fact-item fade-up"><div class="fact-num">12</div><div class="fact-label">Industry Awards</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="cta-title">Book With One of Our <em>Experts</em></div>
+  <a href="contact.html" class="btn-white">Schedule Appointment</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Denta<span>Lux</span></div>
+      <div class="footer-desc">Where exceptional dental care meets a warm, welcoming environment. Your journey to a perfect smile begins here.</div>
+      <div style="display:flex; gap:12px; margin-top:25px;">
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">f</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">in</a>
+        <a href="#" style="width:38px; height:38px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4); text-decoration:none; transition:all 0.3s; font-size:14px;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)';this.style.color='rgba(255,255,255,0.4)'">ig</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Pages</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="doctors.html">Our Doctors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Services</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Cosmetic Dentistry</a></li>
+        <li><a href="services.html">Dental Implants</a></li>
+        <li><a href="services.html">Orthodontics</a></li>
+        <li><a href="services.html">Teeth Whitening</a></li>
+        <li><a href="services.html">Root Canal</a></li>
+        <li><a href="services.html">Oral Surgery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="#">📍 123 Smile Avenue, Suite 400<br>Beverly Hills, CA 90210</a></li>
+        <li><a href="tel:+13105550100">📞 +1 (310) 555-0100</a></li>
+        <li><a href="mailto:hello@dentalux.com">✉️ hello@dentalux.com</a></li>
+        <li><a href="#">🕐 Mon–Fri: 8am – 7pm<br>Sat: 9am – 5pm</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 DentaLux. All rights reserved.</div>
+    <div style="display:flex; gap:25px;">
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Privacy Policy</a>
+      <a href="#" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<div class="page-nav">
+  <a href="index.html">Home</a><a href="services.html">Services</a>
+  <a href="about.html">About</a><a href="doctors.html" class="active">Doctors</a>
+  <a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+</div>
+
+<script>
+function filterDocs(btn, cat) {
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.doctor-card').forEach(card=>{
+    card.style.display=(cat==='all'||card.dataset.cat===cat)?'block':'none';
+  });
+}
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray('.fade-up').forEach(el=>{gsap.to(el,{opacity:1,y:0,duration:0.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%'}});});
+</script>
+
+<!-- Scroll to Top Button -->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<script>
+// Scroll to top functionality
+let mybutton = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+});
+function topFunction() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>
